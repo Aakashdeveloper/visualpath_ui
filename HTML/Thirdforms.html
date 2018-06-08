@@ -7,7 +7,7 @@
             <fieldset>
                 <legend>Employee Form</legend>
                 <label for="fname">FirstName*:<label>
-                     <input type="text" required id="fname"><br/>
+                     <input type="text" required id="fname" name="fname"><br/>
                 <label for="lname">LastName:</label>
                     <input type="text" value="UI" id="lname"><br/>
                 Code:<input type="text" value="AbC247B" readonly><br/>
@@ -22,6 +22,14 @@
                 Banana<input type="checkbox">
                 Mango<input type="checkbox"><br/>
                 <textarea></textarea><br/>
+                Language:
+                <input list="language">
+                <datalist id="language">
+                    <option value="NodeJS">
+                    <option value="AngularJs">
+                    <option value="ReactJS">
+                    <option value="RxJS">
+                </datalist><br/>
                 City
                 <select>
                     <option>London</option>

@@ -1,0 +1,29 @@
+#second{
+        height: 200px;
+         width:300px;
+        background: olive;
+                
+        }
+.first{
+        height: 200px;
+        width:300px;
+        background: gold;
+        }
+
+#Home{
+    height: 500px;
+    width:100%;
+    background: olive;
+}
+
+#About{
+    height: 500px;
+    width:100%;
+    background: blueviolet;
+}
+
+#contact{
+    height: 500px;
+    width:100%;
+    background: yellow;
+}
