@@ -1,0 +1,49 @@
+#main{
+    height: 300px;
+    width:300px;
+    background: skyblue;
+    border:5px double red;
+    border-radius: 50%;
+    background-image:url("a.jpg");
+    opacity: 1;
+    float: left;
+    
+}
+body{
+    /*background-image:url("a.jpg")
+    background: linear-gradient(to right, tomato,aqua,palevioletred,mediumblue)
+    background: radial-gradient(tomato,aqua,palevioletred,mediumblue)*/
+}
+
+#ptext{
+    height: 200px;
+    width: 200px;
+    background: seagreen;
+    overflow: scroll;
+    float: left;
+}
+.second{
+    height: 200px;
+    width: 200px;
+    background: lime;
+    box-shadow: 15px 15px 0 gray;
+    float: left;
+    
+}
+h1{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:red;
+    font-style: italic;
+    text-decoration: underline dotted darkgreen;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+/*
+
+solid
+dotted
+dashed
+double*/

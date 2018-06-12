@@ -1,0 +1,70 @@
+#peter{
+    height: 500px;
+    width:200px;
+    background:sienna;
+    overflow:   hidden;
+    transition:height 1s;
+    padding:2%;
+}
+
+h1{
+    text-align: center
+}
+#peter:hover #inner{ 
+    visibility: visible;
+}
+
+#inner{
+    visibility: hidden
+}
+
+#upper{
+    height: 300px;
+    width:200px;
+    background:lime;
+    /*transform: translate(70px,90px)
+    transform: rotate(30deg)*
+    transform: scale(2,2)*/
+    transform: skewY(20deg);
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.tip{
+    border-bottom:2px dotted green;
+    text-align: center
+}
+
+
+.tip .tipText{
+    visibility: hidden;
+    width:140px;
+    background:gray;
+    color:black;
+    text-align: center;
+    border-radius: 30%;
+    padding:5px;
+    position: absolute;
+    z-index: 1                                                                                                                                                                                                                                                                                                                                      
+}
+
+.tip:hover .tipText{
+    visibility: visible
+}
+
+p>span{
+    color:blue
+}
+
+/*p::first-letter{
+    font-size: 30px;
+    color: greenyellow
+}
+
+p::first-line{
+    color:seagreen
+}*/
+
+p:nth-child(3){
+    color:seagreen
+}
