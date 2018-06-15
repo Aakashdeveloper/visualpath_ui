@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Boot2</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Employee Form
+                </div>
+                <div class="panel-body">
+                    <form actions="#">
+                        <div class="row">
+                            <div class="form-group col-md-4" >
+                                <label for="fname" label="control-label">FirstName</label>
+                                <input type="text" id="fname" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label for="lname" label="control-label">LastName</label>
+                                <input type="text" id="lname" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="lname" label="control-label">LastName</label>
+                                <input type="text" id="lname" class="form-control">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input type="text" placeholder="email" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input type="text" placeholder="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="detail">Detail</label>
+                            <textarea id="detail" class="form-control" ></textarea> 
+                        </div>  
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">FulTime
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#movies">
+                    Movies Detail
+                </button>
+            </div>
+            <div id="movies" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h3 class="modal-heading">Black panther</h3>
+                        </div>
+                        <div class="modal-body">
+                            hollywood
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+           
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                        aria-valuenow="60" aria-valuemax="100" aria-valuemin="0" style="width:60%">
+                        60% complete
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" role="progressbar"
+                        aria-valuenow="60" aria-valuemax="100" aria-valuemin="0" style="width:60%">
+                        60% complete
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                        aria-valuenow="60" aria-valuemax="100" aria-valuemin="0" style="width:60%">
+                        60% complete
+                    </div>
+                </div>
+                <div class="progress ">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                        aria-valuenow="60" aria-valuemax="100" aria-valuemin="0" style="width:60%">
+                        60% complete
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar"
+                        aria-valuenow="60" aria-valuemax="100" aria-valuemin="0" style="width:60%">
+                        60% complete
+                    </div>
+                </div>
+            
+        </div>
+    </body>
+</html>
