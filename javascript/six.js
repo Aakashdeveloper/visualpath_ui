@@ -60,3 +60,71 @@ myArray
 
 
 ////
+for (i=0;i<10;i++){
+    console.log(i)
+}
+
+
+var a = [87, 4, "BMW", "Audi", "red", "yellow", "DF", "D", true, 88, "true", false]
+for(i=0;i<a.length;i++){
+    console.log(a[i])
+}
+
+
+for(i=10;i>0;i--){
+    console.log(a[i])
+}
+
+
+var a = "javascript"
+
+var out = ""
+
+for(i=a.length-1;i>0;i--){
+    out  += a[i]
+}
+
+console.log(out)
+
+var a = "10"
+var b = "20"
+
+a+b
+
+var a = "10"
+var b = "20"
+
+a+b
+"1020"
+parseInt(a)+parseInt(b)
+30
+var c= "javascript"
+undefined
+parseInt(a)+parseInt(c)
+NaN
+var a = 10
+undefined
+a.toString()
+"10"
+
+
+///
+
+var name= prompt("pleae enter your name")
+var name= prompt("pleae enter your name")
+undefined
+name
+"hi"
+var istrue = confirm("you want to leave")
+undefined
+istrue
+true
+var istrue = confirm("you want to leave")
+undefined
+istrue
+false
+
+we need to have array of name
+we will take input from the user and verify that is user a prt of array
+
+if user is part of array we will say allow access else  we will add push new name in array
