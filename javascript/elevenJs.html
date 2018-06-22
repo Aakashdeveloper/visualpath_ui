@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Validate</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            type="text/javascript"></script>
+        <script>
+            function validate(){
+                
+                var name = document.getElementById('fname').value;
+                if(name == ""){
+                    document.getElementById('alte').style.visibility="visible";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>FirstName*</label>
+        <input type="text" placeholder="FirstName" id="fname" onblur="validate()"/>
+        <div class="alert alert-danger" style="visibility: hidden" id="alte">
+            Please enter Value
+        </div>
+        <label>LastName</label>
+        <input type="text" placeholder="lastName" id="lname" onb>
+        <br/>
+        <input type="button" value="Button">
+    </body>
+</html>

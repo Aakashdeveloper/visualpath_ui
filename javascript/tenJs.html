@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function calc(opt){
+                var a = document.getElementById('first').value;
+                var b = document.getElementById('second').value;
+                var out;
+                if(opt == "add"){
+                    out = parseInt(a)+parseInt(b)
+                    document.getElementById('out').innerHTML=out
+                }else if(opt=="sub"){
+                    out = parseInt(a)-parseInt(b)
+                    document.getElementById('out').innerHTML=out
+                }
+                
+                if(isNaN(out) == true){
+                    document.getElementById('out').innerHTML="Please enter valid input"
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input id="first" type"text" placeholder="input1">
+        <input type="text" id="second" placeholder="input2"><br/>
+        <input type="button" value="++++" onclick="calc('add')"/>
+        <input type="button"  value="----" onclick="calc('sub')"/>
+        <h1 id="out">
+
+        </h1>
+    </body>
+   
+</html>
