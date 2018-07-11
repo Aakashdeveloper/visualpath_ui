@@ -1,62 +1,47 @@
 var express = require('express');
 var ejs = require('ejs');
+var chalk = require('chalk');
+var debug = require('debug')('app');
+var morgan = require('morgan');
 var commanRouter = express.Router();
-var bookRouter = express.Router();
-var authorRouter = express.Router();
+
+
 
 var app = express();
 var port = 3000;
 
+app.use(morgan('tiny'));
+
+var nav = [
+    { 
+        Links:'/home',
+        Text:"Home"
+    },{
+        Links:'/cars',
+        Text:"Cars"
+    }]
+
+
+
+var carRouter = require('./src/routes/carRoutes')(nav);
+var adminRouter = require('./src/routes/adminRoutes')(nav);
+
+app.use(express.static(__dirname + '/public'));
+app.set('views', './src/views')
 app.set('view engine', "ejs");
 
-/*app.get('/',function(req,res){
-    res.render('index', {title:'Express+ EJS'});
-    console.log(" i am home page one")
-})
-
-app.get('/about', function(req,res){
-    //res.send({name:'Express', class:'fullstack'})
-    res.render('about')
-})*/
-
-commanRouter.route('/home')
+commanRouter.route('/')
         .get(function(req,res){
-            res.render('index', {title:'Express+ EJS'});
-        })
-commanRouter.route('/about')
-        .get(function(req,res){
-            res.render('about', {title:'Express+ EJS'});
-        })
-
-bookRouter.route('/')
-    .get(function(req,res){
-        res.send('this is book page')
-    })
-bookRouter.route('/detail')
-    .get(function(req,res){
-        res.send('this is detail page of books')
-    })
-
-authorRouter.route('/')
-    .get(function(req,res){
-        res.send('this is author page')
-    })
-
-authorRouter.route('/detail')
-    .get(function(req,res){
-        res.send('this is detail author page')
+            res.render('index', {title:'Home', nav:nav});
     })
 
 
-app.get('/detail', function(req,res){
-    //res.send({name:'Express', class:'fullstack'})
-    res.send('this is detail page')
-})
+app.use('/home',commanRouter);
+app.use('/cars', carRouter);
+app.use('/admin',adminRouter);
 
-app.use('/api',commanRouter);
-app.use('/books', bookRouter);
-app.use('/author', authorRouter)
 
 app.listen(port,function(err){
-    console.log("server is running on port "+ port)
+    //console.log(`server is running on my port ${chalk.blue(port)}`)
+    debug(`server is running on my port ${chalk.blue(port)}`)
 })
