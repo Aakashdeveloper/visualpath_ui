@@ -14,7 +14,7 @@ app.use(morgan('tiny'));
 
 var nav = [
     { 
-        Links:'/home',
+        Links:'/',
         Text:"Home"
     },{
         Links:'/cars',
@@ -36,7 +36,7 @@ commanRouter.route('/')
     })
 
 
-app.use('/home',commanRouter);
+app.use('/',commanRouter);
 app.use('/cars', carRouter);
 app.use('/admin',adminRouter);
 
