@@ -8,3 +8,12 @@ import { Component } from '@angular/core';
 export class BookComponent {
 
 }
+
+
+/*
+one way
+    --Data Binding {{}}
+    --Property []
+    --EventBinding ()
+two way
+*/
