@@ -29,14 +29,14 @@
                         <th>Star Rating</th>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let product of products">
+                        <tr *ngFor="let product of products | filterProduct:filterText">
                             <td>
                                 <img [src]="product.imageUrl" *ngIf="showImage"/>
                             </td>
-                            <td>{{product.productName}}</td>
-                            <td>{{product.productCode}}</td>
+                            <td>{{product.productName | myUpper :'lower'}}</td>
+                            <td>{{product.productCode | myUpper :'upper'}}</td>
                             <td>{{product.releaseDate}}</td>
-                            <td>{{product.price}}</td>
+                            <td>{{product.price | currency:'GBP'}}</td>
                             <td>{{product.starRating}}</td>
                         </tr>
                     </tbody>
