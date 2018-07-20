@@ -9,6 +9,7 @@ import { ProductComponent } from './products/product.component';
 import { UpperPipe } from './products/myUpper.pipe';
 import { FilterPipe } from './products/product-filter.pipe';
 import { ProductService } from './products/product.service';
+import { StarComponent } from './shared/star.component';
 
 @NgModule({
   // All module declare here
@@ -23,7 +24,8 @@ import { ProductService } from './products/product.service';
     BookComponent,
     ProductComponent,
     UpperPipe,
-    FilterPipe
+    FilterPipe,
+    StarComponent
   ],
   // First component
   bootstrap: [

@@ -31,13 +31,16 @@
                     <tbody>
                         <tr *ngFor="let product of products | filterProduct:filterText">
                             <td>
-                                <img [src]="product.imageUrl" *ngIf="showImage"/>
+                                <img [src]="product.imageUrl" *ngIf="showImage"
+                                [style.width.px] = "imageWidth"/>
                             </td>
-                            <td>{{product.productName | myUpper :'lower'}}</td>
+                            <td id="pname">{{product.productName | myUpper :'lower'}}</td>
                             <td>{{product.productCode | myUpper :'upper'}}</td>
                             <td>{{product.releaseDate}}</td>
                             <td>{{product.price | currency:'GBP'}}</td>
-                            <td>{{product.starRating}}</td>
+                            <td>
+                                <app-star></app-star>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
