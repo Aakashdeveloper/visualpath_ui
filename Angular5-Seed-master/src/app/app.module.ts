@@ -10,6 +10,10 @@ import { UpperPipe } from './products/myUpper.pipe';
 import { FilterPipe } from './products/product-filter.pipe';
 import { ProductService } from './products/product.service';
 import { StarComponent } from './shared/star.component';
+import { ProductDetailComponent } from './products/product-detail.component';
+import { OrderComponent } from './orders/order.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './shared/notfound.component';
 
 @NgModule({
   // All module declare here
@@ -25,7 +29,11 @@ import { StarComponent } from './shared/star.component';
     ProductComponent,
     UpperPipe,
     FilterPipe,
-    StarComponent
+    StarComponent,
+    ProductDetailComponent,
+    OrderComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   // First component
   bootstrap: [

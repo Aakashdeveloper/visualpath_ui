@@ -30,4 +30,8 @@ export class ProductComponent implements OnInit {
     displayImage() {
         this.showImage = !this.showImage;
     }
+
+    onDataRecieve(message: string): void {
+        this.title = '***Product list>>>>>>>  ' + message;
+    }
 }
