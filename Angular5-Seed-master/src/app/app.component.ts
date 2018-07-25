@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
                             <li><a [routerLink]="['/home']">Home</a></li>
                             <li><a [routerLink]="['/order']">Order</a></li>
                             <li><a [routerLink]="['/product']">Products</a></li>
+                            <li><a [routerLink]="['/admin']">Admin</a></li>
                         </ul>
                     </div>
                 </nav>

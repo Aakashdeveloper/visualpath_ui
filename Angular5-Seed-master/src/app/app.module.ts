@@ -9,6 +9,7 @@ import { OrderComponent } from './orders/order.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './shared/notfound.component';
 import { ProductModule } from './products/product.module';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   // All module declare here
@@ -18,6 +19,7 @@ import { ProductModule } from './products/product.module';
     HttpModule,
     RouterModule.forRoot([
       {path: 'order', component: OrderComponent},
+      {path: 'admin', component: FormsComponent},
       {path: 'home', component: HomeComponent},
       {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: '**', component: NotFoundComponent}
@@ -29,7 +31,8 @@ import { ProductModule } from './products/product.module';
     AppComponent,
     OrderComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FormsComponent
   ],
   // First component
   bootstrap: [
